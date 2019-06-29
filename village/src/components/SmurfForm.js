@@ -19,6 +19,7 @@ class SmurfForm extends Component {
       height: this.state.height
     }
     this.props.createSmurf(newSmurf)
+    this.props.history.push('/');
 
     this.setState({
       name: '',
